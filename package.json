@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/mulish": "^4.5.14",
     "@portabletext/react": "^3.0.0",
+    "@sanity/ui": "^1.8.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.12.2",

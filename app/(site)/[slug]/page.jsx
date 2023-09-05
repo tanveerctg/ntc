@@ -30,7 +30,7 @@ function Page({ params }) {
     async function fetchData() {
       setLoading(true);
       const pageData = await getPage(slug);
-
+      console.log({ pageData, slug });
       if (!pageData) {
         //this is a random route which doiesnt exist
         return router.replace(`/not-found`);

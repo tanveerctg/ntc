@@ -23,17 +23,19 @@ function Page({ params }) {
   const [selectedSubCategory, setSubCategory] = useState("all");
   const [page, setPage] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const slug = params.slug;
   console.log({ slug });
   useEffect(() => {
     async function fetchData() {
+      setError(false);
       setLoading(true);
       const pageData = await getPage(slug);
       console.log({ pageData, slug });
       if (!pageData) {
-        //this is a random route which doiesnt exist
-        return router.replace(`/${slug}/not-found`);
+        setError(true);
+        return;
       }
       setPage(pageData);
       setLoading(false);
@@ -91,6 +93,23 @@ function Page({ params }) {
           }}
         >
           Loading...
+        </Box>
+      </PageWrapper>
+    );
+  }
+
+  if (error) {
+    return (
+      <PageWrapper>
+        <Box
+          minHeight={"100vh"}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          Not Found
         </Box>
       </PageWrapper>
     );

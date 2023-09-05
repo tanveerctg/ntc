@@ -33,7 +33,7 @@ function Page({ params }) {
 
       if (!pageData) {
         //this is a random route which doiesnt exist
-        return router.replace(`/${slug}/not-found`);
+        return router.replace(`/not-found`);
       }
       setPage(pageData);
       setLoading(false);

@@ -36,6 +36,7 @@ function Page({ params }) {
       if (!pageData) {
         setLoading(false);
         setError(true);
+        notFound();
         return;
       }
       setPage(pageData);

@@ -11,7 +11,7 @@ const page = () => {
         alignItems: "center",
       }}
     >
-      Not Found
+      Not Foundsd
     </div>
   );
 };

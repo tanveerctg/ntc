@@ -14,7 +14,7 @@ export default function NotFound({ children }) {
         pb={4}
         // mx='10'
       >
-        Hello
+        Not Found
       </Heading>
     </>
   );

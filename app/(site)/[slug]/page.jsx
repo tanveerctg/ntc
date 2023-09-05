@@ -34,6 +34,7 @@ function Page({ params }) {
       const pageData = await getPage(slug);
       console.log({ pageData, slug });
       if (!pageData) {
+        setLoading(false);
         setError(true);
         return;
       }

@@ -1,0 +1,40 @@
+{
+  "name": "alchemy-next13-chakra",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "turb": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.18",
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/mulish": "^4.5.14",
+    "@portabletext/react": "^3.0.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "framer-motion": "^10.12.2",
+    "next": "^13.4.6",
+    "next-sanity": "^4.1.7",
+    "next-seo": "^6.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-obfuscate": "^3.6.9",
+    "react-obfuscate-email": "^1.1.2",
+    "react-scroll": "^1.8.9",
+    "react-twitter-widgets": "^1.11.0",
+    "sanity": "^3.9.0",
+    "sanity-image": "^0.1.5",
+    "scroll-snap": "^4.0.3",
+    "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+    "next-sitemap": "^4.1.3"
+  }
+}
